@@ -42,16 +42,11 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=sk-...your key here...
 ```
 
-## Run via Jupyter Notebook (recommended)
+## Run via Jupyter Notebook
 1. Open Anaconda Navigator → Launch Jupyter Notebook
 2. Open `agent.ipynb`
 3. Add your API key in Cell 1
 4. Run all cells with `Shift + Enter`
-
-## Run via Terminal
-```bash
-python agent.py "latest developments in agentic AI 2026"
-```
 
 ## Sample Output
 ```
@@ -97,7 +92,7 @@ Every step emits a structured JSON trace:
 ```
 
 ## Deliverables Checklist
-- [x] Codebase — `agent.py` + `agent.ipynb`
+- [x] Codebase — `agent.ipynb`
 - [x] Architecture diagram — included in presentation
 - [x] Use case illustration — web research summarization agent
 - [x] Deployment & telemetry — `agent_trace.log` with per-step JSON traces
@@ -112,9 +107,7 @@ Every step emits a structured JSON trace:
 ## Project Structure
 ```
 scrape-agent/
-├── agent.py              # CLI version
-├── agent.ipynb           # Jupyter notebook version
+├── agent.ipynb           # Jupyter notebook (codebase + executed output)
 ├── requirements.txt      # Dependencies
-├── README.md             # This file
-└── agent_trace.log       # Generated on run (observability output)
+└── README.md             # This file
 ```
